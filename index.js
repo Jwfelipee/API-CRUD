@@ -9,9 +9,9 @@ app.use(cors());
 
 mongoose.set('useCreateIndex', true);
 
-mongoose.connect('mongodb://localhost:27017/curso', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://Jwfelipe:Wictor91@cluster0.uqtla.mongodb.net/cursos?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 requireDir('./src/models')
 
 app.use('/sistema', require('./src/routes/routes'));
-app.listen(3001);
+app.listen(process.env.PORT || 3001);

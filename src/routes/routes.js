@@ -1,6 +1,5 @@
 const express = require('express');
 const routes = express.Router();
-
 const usuarioController = require("../controller/usuarios.js");
 
 routes.post('/usuarios', usuarioController.insert);
