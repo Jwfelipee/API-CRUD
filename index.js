@@ -7,9 +7,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+require('dotenv').config()
+
 mongoose.set('useCreateIndex', true);
 
-mongoose.connect('mongodb+srv://Jwfelipe:Wictor91@cluster0.uqtla.mongodb.net/cursos?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://Jwfelipe:DB_PASS@cluster0.uqtla.mongodb.net/cursos?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 requireDir('./src/models')
 
