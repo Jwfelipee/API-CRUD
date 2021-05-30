@@ -4,6 +4,7 @@
   "description": "Curso com os principais conceitos de integração do NodeJs e MongoDB.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
